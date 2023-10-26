@@ -13,10 +13,11 @@ function keywordFunc(a, b) {
 }
 
 const arrowFunc = (a, b) => {
-  console.log(arguments); // undefined. Стрелочная фукнция не имеет argiments
+  console.log(arguments); // undefined. Стрелочная фукнция не имеет arguments
 };
 
-//
+// arguments - это встроенный объект внутри именованных функци,
+// который хранит в себе все переденные в функцию атрибуты
 
 keywordFunc(1, 2); // [Arguments] { '0': 1, '1': 2 }
 arrowFunc(1, 2); // Ошибка: arguments не определено. Т.е. undefined
